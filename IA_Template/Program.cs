@@ -28,7 +28,7 @@ namespace IA_Template
             bot = new Bot(x =>
             {
                 x.Name = "starter-bot";
-                x.Token = "<Token-here>";
+                x.Token = "MTg4Nzg0MDczMjYxNDQ5MjE3.Cvv6fw.T-bTAOXVgEqkHf4yQRCKpUxLgUU";
                 x.Prefix = ">";
             });
 
@@ -57,7 +57,7 @@ namespace IA_Template
                 {
                     //SendMessageSafeAsync is a safer solution made for IA.
                     //bot.Events.ListCommands(message) lists all commands that are installed into your bot.
-                    await message.Channel.SendMessageSafeAsync(arg);
+                    await message.Channel.SendMessage(arg);
                 };
             });
 
@@ -74,7 +74,7 @@ namespace IA_Template
                         command.name = "ping";
                         command.processCommand = async (message, arg) =>
                         {
-                            await message.Channel.SendMessageSafeAsync("Pong!");
+                            await message.Channel.SendMessage("Pong!");
                         };
                     })
                 };

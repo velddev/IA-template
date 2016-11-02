@@ -55,10 +55,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="IA">
-      <HintPath>..\..\IA_Template\IA_Template\deps\IA.dll</HintPath>
+      <HintPath>..\..\IA\IA\bin\Debug\IA.dll</HintPath>
     </Reference>
     <Reference Include="IA.SDK">
-      <HintPath>..\..\IA_Template\IA_Template\deps\IA.SDK.dll</HintPath>
+      <HintPath>..\..\IA\IA\bin\Debug\IA.SDK.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Primitives.4.0.1\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
