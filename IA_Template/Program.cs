@@ -50,14 +50,14 @@ namespace IA_Template
             // Create single commands
             bot.Events.AddCommandEvent(command =>
             {
-                command.name = "say";
+                command.name = "help";
 
                 // processCommand gets called whenever someone calls the command. for example ">help" for this one.
                 command.processCommand = async (message, arg) =>
                 {
                     //SendMessageSafeAsync is a safer solution made for IA.
                     //bot.Events.ListCommands(message) lists all commands that are installed into your bot.
-                    await message.Channel.SendMessage(arg);
+                    await message.Channel.SendMessage(await bot.Events.ListCommands(message));
                 };
             });
 
