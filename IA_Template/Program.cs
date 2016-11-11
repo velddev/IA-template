@@ -29,7 +29,7 @@ namespace IA_Template
             {
                 x.Name = "starter-bot";
                 x.Token = "MTg4Nzg0MDczMjYxNDQ5MjE3.Cvv6fw.T-bTAOXVgEqkHf4yQRCKpUxLgUU";
-                x.Prefix = ">";
+                x.Prefix = PrefixValue.Set(">");
             });
 
             await LoadModules();
