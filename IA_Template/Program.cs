@@ -67,7 +67,7 @@ namespace IA_Template
                 module.name = "general";
 
                 // All commands that will be stored here, same way as AddCommandEvent.
-                module.events = new List<IA.Events.CommandEvent>()
+                module.events = new List<CommandEvent>()
                 {
                     new IA.Events.CommandEvent(command =>
                     {
